@@ -1,0 +1,96 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "doNotList": false,
+    "givenName": {
+      "@value": "ADA_Labo"
+    },
+    "motivations": {
+      "@value": "より健全な民主主義を主張します。\\nWe advocate for a healthier democracy."
+    },
+    "objectives": {
+      "@value": "不健全な民主主義に抵抗します。\\nWe resist unhealthy democracy."
+    },
+    "paymentAddress": {
+      "@value": "addr1qx0plkha3ymphzz8kejsrx4zfwx7xxav389k4vgqjje3ntljv2gr8m5apqmkmw2jqkp8pc02q66lqu9p0xwun4k6fgzsz8xu6y"
+    },
+    "qualifications": {
+      "@value": "ADA Labo は、最も実績を持つブロックチェーンコンサルタントです。\\nADA Labo is the most experienced blockchain consultant."
+    },
+    "references": [
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "ADA Labo : Cardano network consultant"
+        },
+        "uri": {
+          "@value": "https://thc-room335.com"
+        }
+      },
+      {
+        "@type": "Identity",
+        "label": {
+          "@value": "SNS：X.com"
+        },
+        "uri": {
+          "@value": "https://x.com/funkyhiro2009"
+        }
+      }
+    ]
+  }
+}
